@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var students = [];
+      //   students = ["ali", "hamza", "Daniyal", "qatadah"];
+      //   console.log(students);
+      //   console.log("First student is " + students[0]);
+      var students = [];
+      students[0] = "ali";
+      students[1] = "Hamza";
+      students[2] = "Daniyal";
+      students[3] = "qatadah";
+      console.log(students);
+      // Declairing an empty array after this i will store students name in this
+      var myArray = ["rabit"];
+      myArray[1] = "cat";
+      myArray[2] = "parrot";
+      myArray[3] = "german sephard";
+      console.log(myArray[0]);
+      // if we wana to change elements in array
+      myArray = new Array("sparrow", "pigeon");
+      // myArray has been replaced by new upcoming two elements [sparrow , pigeon]
+      console.log(myArray);
+      // if we need to store some more elements in array we can add or remove them by external methodkuytrewq
+
+      // this method will remove element from end
+      var pets = ["cow", "goat", "buffalow"];
+      pets.pop();
+      // buffalow has been remove from the array
+      console.log(pets);
+      // this method will remove element from end
+      var city = ["lahore", "mianwali", "multan", "karachi"];
+      console.log(city);
+      city.shift();
+      // lahore has removed from array
+      console.log(city);
+      // if we want to add any element at the begining of array we will use unshift()
+      city.unshift("gujranwala");
+      // now gujranwala has added to the array name city
+      console.log(city);
+      // if we want to replace any item from array we will add that simply or replace
+
+      city[1] = "Quetta";
+      // mianwali was at index 1 now it has been replaced by "Quetta"
+
+      console.log(city);
+      document.write(city.length + "<br/>");
+
+      // declare a number array
+      var int = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+      document.write(int + "<br/>");
+      console.log(int);
+      // Boolean array
+      var array = [];
+      for (i = 0; i < 20; i++) {
+        array[i] = i % 2 === 0;
+      }
+      var strArray = [];
+      for (i = 0; i < 20; i++) {
+        strArray[i] = array[i] ? "true" : "false";
+        console.log(strArray[i]);
+      }
+
+// using array in for loop lets begin 
+var fruitsList =["apple" , "banana" , "mango" , "orange" , "cherry"];
+// in above array we have an array with 5 items and index is 4 lets run a for loop
+
+for (var i=0 ; i<fruitsList.length ; i++){
+// loop run alert will be call
+  alert(fruitsList[i]);
+}
+var a ={
+  name: "George",
+  age: 30,
+  status: true
+}
+for (var itm in a){
+  console.log(itm + a[itm]);
+}
+    </script>
+  </body>
+</html>
