@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      #more {
+        display: none;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Rape of the Lock</h1>
+    <p>
+      The Rape of the Lock begins with a passage outlining the subject of the
+      poem and invoking the aid of the muse. Then the sun (“Sol”) appears to
+      initiate the leisurely morning routines of a wealthy household.<span
+        id="dots"
+        >....</span
+      >
+      <span id="more">
+        moreLapdogs shake themselves awake, bells begin to ring, and although it
+        is already noon, Belinda still sleeps. She has been dreaming, and we
+        learn that the dream has been sent by “her guardian Sylph,” Ariel. The
+        dream is of a handsome youth who tells her that she is protected by
+        “unnumber’d Spirits”—an army of supernatural beings who once lived on
+        earth as human women. The youth explains that they are the invisible
+        guardians of women’s chastity, although the credit is usually mistakenly
+        given to “Honour” rather than to their divine stewardship. Of these
+        Spirits, one particular group—the Sylphs, who dwell in the air—serve as
+        Belinda’s personal guardians; they are devoted, lover-like, to any woman
+        that “rejects mankind,” and they understand and reward the vanities of
+        an elegant and frivolous lady like Belinda. Ariel, the chief of all
+        Belinda’s puckish protectors, warns her in this dream that “some dread
+        event” is going to befall her that day, though he can tell her nothing
+        more specific than that she should “beware of Man!” Then Belinda awakes,
+        to the licking tongue of her lapdog, Shock. Upon the delivery of a
+        billet-doux, or love-letter, she forgets all about the dream. She then
+        proceeds to her dressing table and goes through an elaborate ritual of
+        dressing, in which her own image in the mirror is described as a
+        “heavenly image,” a “goddess.” The Sylphs, unseen, assist their charge
+        as she prepares herself for the day’s activities. Commentary The opening
+        of the poem establishes its mock-heroic style. Pope introduces the
+        conventional epic subjects of love and war and includes an invocation to
+        the muse and a dedication to the man (the historical John Caryll) who
+        commissioned the poem. Yet the tone already indicates that the high
+        seriousness of these traditional topics has suffered a diminishment. The
+        second line confirms in explicit terms what the first line already
+        suggests: the “am’rous causes” the poem describes are not comparable to
+        the grand love of Greek heroes but rather represent a trivialized
+        version of that emotion. The “contests” Pope alludes to will prove to be
+        “mighty” only in an ironic sense. They are card-games and flirtatious
+        tussles, not the great battles of epic tradition. Belinda is not, like
+        Helen of Troy, “the face that launched a thousand ships” (see the
+        SparkNote on The Iliad), but rather a face that—although also
+        beautiful—prompts a lot of foppish nonsense. The first two
+        verse-paragraphs emphasize the comic inappropriateness of the epic style
+        (and corresponding mind-set) to the subject at hand. Pope achieves this
+        discrepancy at the level of the line and half-line; the reader is meant
+        to dwell on the incompatibility between the two sides of his parallel
+        formulations. Thus, in this world, it is “little men” who in “tasks so
+        bold... engage”; and “soft bosoms” are the dwelling-place for “mighty
+        rage.” In this startling juxtaposition of the petty and the grand, the
+        former is real while the latter is ironic. In mock-epic, the high heroic
+        style works not to dignify the subject but rather to expose and ridicule
+        it. Therefore, the basic irony of the style supports the substance of
+        the poem’s satire, which attacks the misguided values of a society that
+        takes small matters for serious ones while failing to attend to issues
+        of genuine importance. With Belinda’s dream, Pope introduces the
+        “machinery” of the poem—the supernatural powers that influence the
+        action from behind the scenes. Here, the sprites that watch over Belinda
+        are meant to mimic the gods of the Greek and Roman traditions, who are
+        sometimes benevolent and sometimes malicious, but always intimately
+        involved in earthly events. The scheme also makes use of other ancient
+        hierarchies and systems of order. Ariel explains that women’s spirits,
+        when they die, return “to their first Elements.” Each female personality
+        type (these types correspond to the four humours) is converted into a
+        particular kind of sprite. These gnomes, sylphs, salamanders, and
+        nymphs, in turn, are associated with the four elements of earth, air,
+        fire, and water. The airy sylphs are those who in their lifetimes were
+        “light Coquettes”; they have a particular concern for Belinda because
+        she is of this type, and this will be the aspect of feminine nature with
+        which the poem is most concerned.</span
+      >
+    </p>
+    <button type="button" id="read" class="btn btn-primary" onclick="read()">
+      Read More
+    </button>
+    <script>
+      function read() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("read");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>
