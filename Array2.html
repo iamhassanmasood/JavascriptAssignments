@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     var multiArray = [[0,1,2,3], [1,0,2,0], [1,2,1,0]];
+//     console.log(multiArray);
+//      var arr = [];
+//      for (var i=0 ; i<11 ; i++ ){
+//          console.log([i]);
+//      }
+//     var a =parseInt(prompt("Enter a Number for multiplication"));
+//     var x = parseInt(prompt("Enter a Number limit"));
+//     for (var i=0; i<=x ; i++){
+//     document.write(a+"x"+" "+i +"="+ a*i+"<br/>");
+
+// }
+//     var b = "cake";
+//     var c = "chips";
+//     var iNeed = prompt("Hey Sir What you need from my bakery");
+//     if(iNeed===b || iNeed===c){
+//         alert(iNeed +" is available in our bakery");
+//     } 
+//     else{
+//         alert("sorry sir "+iNeed+ " is not available in our bakery");
+//     }
+    var rows =7;
+    var cols = 7;
+    for(var i=1; i<=rows; i++) {
+        for(var j=1; j<=cols; j++) {
+            document.write("*");
+        }
+        document.write("<br/>");
+    }
+
+    var rows =7;
+    // var cols = 7;
+    for(var i=1; i<=rows; i++) {
+        for(var j=1; j<=i; j++) {
+            document.write("*");
+        }
+        document.write("<br/>");
+    }
+
+    </script>
+</body>
+</html>
