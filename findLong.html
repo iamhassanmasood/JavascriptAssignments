@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <h2>Logest word in your written string</h2>
+
+    <script>
+      let string = prompt("Enter a string");
+      function findLongest(str) {
+        let arr = str.split(" ");
+        let winner = arr[0];
+        console.log(winner);
+        for (let i = 1; i < arr.length; i++) {
+          winner.length < arr[i].length ? (winner = arr[i]) : winner;
+        }
+        return winner;
+      }
+
+      document.write(findLongest(string));
+    </script>
+  </body>
+</html>
