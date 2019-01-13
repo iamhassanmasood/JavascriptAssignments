@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body onload="myBalance()">
+    <script>
+      function myBalance() {
+        var a = parsInt(prompt("Enter amount to withdraw"));
+        document.getElementById("test").innerText =
+          "You will have " +
+          a[0] +
+          " hundred notes " +
+          a[1] +
+          " ten notes ";
+      }
+    </script>
+    <h2 id="test"></h2>
+  </body>
+</html>
